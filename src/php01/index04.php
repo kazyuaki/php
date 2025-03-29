@@ -50,13 +50,42 @@
 // echo "<br />";
 
 // (加算子と減算子)
-$a = $b = 10;
-$c = $d = 5;
+// $a = $b = 10;
+// $c = $d = 5;
 
-echo ++$a;
-echo "<br />";
-echo $b++;
-echo "<br />";
-echo --$c;
-echo "<br />";
-echo $d--;
+// echo ++$a;
+// echo "<br />";
+// echo $b++;
+// echo "<br />";
+// echo --$c;
+// echo "<br />";
+// echo $d--;
+
+
+// 番外編 九九表 for文
+
+for($i = 1; $i <= 9; $i++){
+    for($j = 1; $j <= 9; $j++){
+        $result = $i * $j;
+        $row = $result . " ";
+        echo $row;
+    }
+        echo '<br>';
+}
+echo '<br>';
+
+// 九九表 while文
+$i = 1;
+while ($i <= 9) {
+    $j = 1;
+    while($j <= 9){
+        $result = $i * $j;
+        $row = $result . " ";
+        $j++;
+        echo $row;
+    }
+    echo '<br>';
+    $i++;   
+}
+
+
